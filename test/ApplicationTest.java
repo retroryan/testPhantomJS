@@ -6,6 +6,8 @@ import java.util.Map;
 import com.fasterxml.jackson.databind.JsonNode;
 import org.junit.*;
 
+import org.junit.runner.RunWith;
+import org.junit.runners.BlockJUnit4ClassRunner;
 import play.mvc.*;
 import play.test.*;
 import play.data.DynamicForm;
@@ -26,11 +28,13 @@ import static org.fest.assertions.Assertions.*;
 * If you are interested in mocking a whole application, see the wiki for more details.
 *
 */
+@RunWith(BlockJUnit4ClassRunner.class)
 public class ApplicationTest {
 
     @Test
     public void simpleCheck() {
         int a = 1 + 1;
+        System.out.println("a = " + a);
         assertThat(a).isEqualTo(2);
     }
 
