@@ -1,32 +1,16 @@
-import org.junit.*;
-
-import play.twirl.api.Content;
-
-import static play.test.Helpers.*;
-import static org.fest.assertions.Assertions.*;
+import org.junit.Test;
+import org.junit.runner.RunWith;
 
 
 /**
-*
-* Simple (JUnit) tests that can call all parts of a play app.
-* If you are interested in mocking a whole application, see the wiki for more details.
-*
-*/
-public class ApplicationTest extends MyTestBaseClass {
+ * Simple (JUnit) tests that can call all parts of a play app.
+ * If you are interested in mocking a whole application, see the wiki for more details.
+ */
+public class ApplicationTest extends MyTestBaseClass{
 
     @Test
     public void simpleCheck() {
-        int a = 1 + 1;
-        System.out.println("a = " + a);
-        assertThat(a).isEqualTo(2);
+        System.out.println(".......... RUNNING MyTest.simpleCheck");
     }
-
-    @Test
-    public void renderTemplate() {
-        Content html = views.html.index.render("Your new application is ready.");
-        assertThat(contentType(html)).isEqualTo("text/html");
-        assertThat(contentAsString(html)).contains("Your new application is ready.");
-    }
-
 
 }
