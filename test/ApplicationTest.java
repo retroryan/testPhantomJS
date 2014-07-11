@@ -1,21 +1,5 @@
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
-import com.fasterxml.jackson.databind.JsonNode;
 import org.junit.*;
 
-import org.junit.runner.RunWith;
-import org.junit.runners.BlockJUnit4ClassRunner;
-import play.mvc.*;
-import play.test.*;
-import play.data.DynamicForm;
-import play.data.validation.ValidationError;
-import play.data.validation.Constraints.RequiredValidator;
-import play.i18n.Lang;
-import play.libs.F;
-import play.libs.F.*;
 import play.twirl.api.Content;
 
 import static play.test.Helpers.*;
@@ -28,8 +12,7 @@ import static org.fest.assertions.Assertions.*;
 * If you are interested in mocking a whole application, see the wiki for more details.
 *
 */
-@RunWith(BlockJUnit4ClassRunner.class)
-public class ApplicationTest {
+public class ApplicationTest extends MyTestBaseClass {
 
     @Test
     public void simpleCheck() {
