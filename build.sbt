@@ -1,4 +1,4 @@
-name := """testPhantomJS"""
+name := """testPhantomJS22"""
 
 version := "1.0-SNAPSHOT"
 
